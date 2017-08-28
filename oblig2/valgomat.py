@@ -2,34 +2,38 @@
 # men vi følger oppsettet til VG, som er ganske enkle ja/nei-spørsmål.
 # Mulig dette ikke er så objektivt, og heller ikke så saklig.
 
+spm_teller=0
+
+def spm(sporsmaal,enigtxt,uenigtxt,vetikke):
+    global spm_teller
+    spm_teller=spm_teller+1
+    sporsmaal=str(spm_teller)+". "+sporsmaal
+    svar1=(input(sporsmaal)).lower()
+    pos=["ja","enig","yes"]
+    neg=["nei","uenig","no"]
+    if svar1 in pos:
+        print(enigtxt)
+    elif svar1 in neg:
+        print(uenigtxt)
+    else:
+        print(vetikke)
+
 navn=input("Hva heter du? Vi har ikke hemmelig valg her... \n")
 
-svar1=input("1. Vi må øke skatter og avgifter for å opprettholde og bedre velferden vår. Svar: enig eller uenig. \n")
+spm("Vi må øke skatter og avgifter for å opprettholde og bedre velferden vår. Svar: enig eller uenig. \n",
+    "Du er nok på venstresida i politikken, kamerat. \n",
+    "Du er nok på høyresida i politikken. På tide med ei lakrispipe. \n",
+    "Nå må du se å ta et valg, enig eller uenig?!? \n")
 
-if svar1=="enig":
-    print("Du er nok på venstresida i politikken, kamerat. \n")
-elif svar1=="uenig":
-    print("Du er nok på høyresida i politikken. På tide med ei lakrispipe. \n")
-else:
-    print("Nå må du se å ta et valg, enig eller uenig?!? \n")
 
-svar2=input("2. Ja til at flere private aktører kan drive eldreomsorg, enig eller uenig? \n")
+spm("Ja til at flere private aktører kan drive eldreomsorg, enig eller uenig? \n",
+    "Bestemor ut på anbud. HURRA!\n",
+    "Du likær'kke velferdsprofittører.\n",
+    "Du må da ha meninger om alt, hvis du skal ta et valg?!? \n")
 
-if svar2=="enig":
-    print("Bestemor ut på anbud. HURRA!\n")
-elif svar2=="uenig":
-    print("Du likær'kke velferdsprofittører.\n")
-else:
-    print("Du må da ha meninger om alt, hvis du skal ta et valg?!? \n")
-
-svar3=input("3. Det er bra med flere midlertidige ansettelser, enig eller uenig? \n")
-
-if svar3=="enig":
-    print("Så du liker at jobbsituasjonen er spennende og fleksibel i stedet for stabil? Deg om det...\n")
-elif svar3=="uenig":
-    print("LO liker deg.\n")
-else:
-    print("Trenger ikke jobb du, eller?\n")
+spm("Det er bra med flere midlertidige ansettelser, enig eller uenig? \n",
+    "Så du liker at jobbsituasjonen er spennende og fleksibel i stedet for stabil? Deg om det...\n",
+    "LO liker deg.\n","Trenger ikke jobb du, eller?\n")
 
 svar4=input("4. Team Erna eller team Jonas? Svar: Erna eller Jonas \n")
 

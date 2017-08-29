@@ -12,3 +12,5 @@ def navnsted():
 navnsted()
 navnsted()
 navnsted()
+
+#Dette gjør at vi slipper skrive de samme tingene flere ganger. Mer effektivt og ryddigere.

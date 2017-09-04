@@ -15,7 +15,7 @@ canvas = vindu.canvas()
 #Gir sirkelen rødfarge.
 canvas.setOutline("red")
 
-# canvas.setFill("red") kan brukes for å lage det japanske flagget.
+#canvas.setFill("red") #kan brukes for å lage det japanske flagget.
 
 #canvas.drawOval(x, y, width, height) brukes for å tegne sirkel.
 canvas.drawOval(100,100,300,300)

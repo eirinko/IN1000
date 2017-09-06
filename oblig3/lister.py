@@ -7,7 +7,7 @@ print(a[2]) #Skriver ut det tredje tallet i lista.
 #Oppg.1.2: Tom liste.
 b=[] #Lager tom liste.
 
-b.append(input("Skriv inn et navn: ")) #Legger til det som er input "Navn", på slutten av lista.
+b.append(input("Du skal skrive inn fire navn totalt. \nSkriv inn et navn: ")) #Legger til det som er input "Navn", på slutten av lista.
 b.append(input("Skriv inn et navn: ")) #Legger til det som er input "Navn", på slutten av lista.
 b.append(input("Skriv inn et navn: ")) #Legger til det som er input "Navn", på slutten av lista.
 b.append(input("Skriv inn et navn: ")) #Legger til det som er input "Navn", på slutten av lista.

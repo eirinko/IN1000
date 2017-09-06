@@ -1,4 +1,4 @@
-#Oppg.3.1-4. Bruke modulen ezGraphics.py for å tegne figurer.
+#Oppg.3.1-4. Bruke modulen ezGraphics.py for å tegne figurer. Har dessverre ikke fått meg pensumboka enda...
 #Henter først ut GraphicsWindow fra exgraphics, der figurene kan tegnes.
 
 from ezgraphics import GraphicsWindow

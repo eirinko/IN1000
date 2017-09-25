@@ -8,23 +8,23 @@ while test !=0:
 #Oppg.2.2. lagre tall i tom liste.
 
 test=1
-listen=[]
+tall=[]
 while test !=0:
     test=int(input("Skriv inn et tall: "))
-    listen.append(test)
+    tall.append(test)
 
 
 #Oppg.2.3. for-lokke som skriver ut hvert element.
 
-for i in range(len(listen)):
-    print(listen[i])
+for i in range(len(tall)):
+    print(tall[i])
 
 
 #Oppg.2.4. minSum summerer tallene i listen.
 
 sum=0
-for i in range(len(listen)):
-    sum+=listen[i]
+for i in range(len(tall)):
+    sum+=tall[i]
 
 print("Summen av tallene i listen er: ", sum)
 
@@ -32,17 +32,21 @@ print("Summen av tallene i listen er: ", sum)
 #Oppg.2.5. finner min og maks i listen
 #Forst minimum
 
-minst=listen[0]
-for i in listen:
+minst=tall[0]
+for i in tall:
     if i < minst:
         minst = i
 
-for i in range(1,len(listen)):
-    if minst>listen[i]:
-        minst=listen[i]
+#for i in range(1,len(tall)):
+#    if minst>tall[i]:
+#        minst=tall[i] to maater aa lose oppg paa.
+
+print(minst)
 
 #Deretter maks
-maks=listen[0]
-for i in listen:
+maks=tall[0]
+for i in tall:
     if i > maks:
         maks = i
+
+print(maks)

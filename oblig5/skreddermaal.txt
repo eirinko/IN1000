@@ -1,0 +1,4 @@
+skulderbredde 4
+halsvidde 3.2
+livvidde 10
+indre_benslengde 32

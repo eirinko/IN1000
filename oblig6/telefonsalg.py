@@ -17,8 +17,7 @@ def maanedensSalgsperson(ordbok):
         if ordbok[navn]>salgstall:
             salgstall=ordbok[navn]
             person=navn
-    print("Dette er maanedens salgsperson: ", person)
-    print("Dette er maanedens beste salgstall: ", salgstall)
+    print("Maanedens salgsperson er ", person, ", med ", salgstall, " salg.")
 
 #Oppg.1.3. En funksjon som regner ut totalsalg den maanden.
 def totalAntallSalg(ordbok):
@@ -29,12 +28,15 @@ def totalAntallSalg(ordbok):
 
 #Oppg.1.4. En funksjon som gir gjennomsnittlig salg per person.
 #Bruker resultatet fra totaltAntallSalg og deler paa antallet i lista.
-def gjennomsnittSalg(tot,ordbok):
-    
+def gjennomsnittSalg(ordbok):
+    return totalAntallSalg(ordbok)/len(ordbok)
 
-
+#Oppg.1.5. Hovedprogrammet der funksjonene over kalles paa og resultat skrives ut som i oppgaven.
 def hovedprogram():
-    salgstall=innlesing("salgsstatistikk.txt")
-    maanedensSalgsperson(salgstall)
+    OrdbokSalgstall=innlesing("salgsstatistikk.txt")
+    maanedensSalgsperson(OrdbokSalgstall)
+    print("Aktive selgere denne maaneden: ", len(OrdbokSalgstall))
+    print("Totalt antall salg: ",totalAntallSalg(OrdbokSalgstall))
+    print("Gjennomsnittlig antall salg per salgsperson: ", gjennomsnittSalg(OrdbokSalgstall))
 
 hovedprogram()

@@ -14,10 +14,8 @@ class Celle:
     def erLevende(self):
         return self._status
 
-    def tegnRepr(self):
+    def hentStatusTegn(self):
         if self._status==True:
             return "O"
         else:
-            return "."
-
-    
+            return "."    

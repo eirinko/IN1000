@@ -8,7 +8,7 @@ def main():
     liv2=Celle()
     print(liv2.erLevende())
 
-    print(liv1.tegnRepr())
-    print(liv2.tegnRepr())
+    print(liv1.hentStatusTegn())
+    print(liv2.hentStatusTegn())
     
 main()

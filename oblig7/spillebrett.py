@@ -11,7 +11,18 @@ class Spillebrett:
         self.generer()
 
     def tegnBrett(self):
-        return self._rutenett
+        for i in range(self._rader):
+            rad=""
+            for j in range(self._kolonner):
+                rad+=self._rutenett[i][j].hentStatusTegn()
+            print(rad)
+
+#    def tegnBrett(self):
+#        for i in range(self._rader):
+#            for j in range(self._kolonner):
+#                print(self._rutenett[i][j].hentStatusTegn(),end="")
+#            print("")
+
 
     def oppdatering(self):
         pass

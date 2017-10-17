@@ -1,0 +1,36 @@
+﻿ukens pensum: 16.10.17
+Intuisjon: se på eksempler.
+Forståelse/detaljkunnskap: code tracing, se på kodelinjer som du kjenner fra før.
+Teori og praksis på kombineres.
+Trening er det resten av semesteret går ut på.
+
+Innholdet i variabelen som inneholder et objekt er adressen dit, eller en referanse.
+
+rek1--> lengde=3 og bredde=5.
+print(rek1)
+__main__.Rektangel object at 0xd00032mceesf3.
+
+Får altså ut referansen i stedet for objektet.
+For å lese av eller gjøre noe med innholdet i objektet må vi inn i objektet.
+Metoder kan få tak i dette, og disse adresserer vi med dot-notasjon.
+Hvis vi skal gjøre noe med referansen kan vi ta det nye ref.navnet = den gamle referansen.
+For å gjøre noe med objektet må vi ha referansen+ punktum + en metode.
+
+from rektangel import Rektangel
+print(Rektangel(10,15).areal())
+
+Så langt har vi sett på lister (list): rekkefølge og nummerert, mengder (set): unummerert, uten dubletter 
+og ordbøker (dictionary) - nøkkel og verdi.
+
+"counts" inneholder en referanse til en liste. listen inneholder referanser til andre lister: counts[5][0]
+
+Liste av lister: Indeksering:
+Første indeks er radene, andre indeks er kolonnene.
+[i-1][j-1]	[i-1][j]	[i-1][j+1]
+[i][j-1]	[i][j]		[i][j+1]
+
+Lager klassen Emne i filen emne.py
+
+
+
+

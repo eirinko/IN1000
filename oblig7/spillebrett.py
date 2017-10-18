@@ -29,17 +29,29 @@ class Spillebrett:
 
 
     def oppdatering(self):
+        #5a. Oppretter to lister
         ny_status_levende=[]
         ny_status_doed=[]
+
+        #5b. noestet for-loekke, sjekker hver celle om den er levende med metoden .erLevende()
+        #celle_status blir derfor True hvis cellen lever eller False hvis cellen er doed.
         for i in range(self._rader):
             for j in range(self._kolonner):
                 celle_status=self._rutenett[i][j].erLevende()
+
+                #Lager en liste "naboer" som inneholder alle naboer til cellen(i,j)
                 naboer=self.finnNabo(i,j)
+
+                #Oppretter variabel som teller antall levende naboer.
                 antall_levende_naboer=0
+
+                #Hver gang et element i lista over naboer er levende/True vil variabelen oeke med 1.
                 for element in naboer:
                     if element.erLevende()==True:
                         antall_levende_naboer+=1
 
+                #Hvis cellen paa plass i,j er levende/True vil programmet gaa inn i denne delen.
+                #Spillets regler bestemmer hvilke celler som lagres i ny_status_doed.
                 if celle_status==True:
                     if antall_levende_naboer<2:
                         ny_status_doed.append(self._rutenett[i][j])
@@ -48,16 +60,20 @@ class Spillebrett:
                     elif antall_levende_naboer>3:
                         ny_status_doed.append(self._rutenett[i][j])
 
+                #Hvis cellen paa plass i,j er doed/False vil programmet gaa inn i denne delen.
+                #Spillets regler bestemmer hvilke celler som lagres i ny_status_levende.
                 elif celle_status==False:
                     if antall_levende_naboer==3:
                         ny_status_levende.append(self._rutenett[i][j])
 
+        #Statusen til cellene i brettet oppdateres.
         for elements in ny_status_levende:
             elements.settLevende()
 
         for elements in ny_status_doed:
             elements.settDoed()
 
+        #variabelen generasjon maa oekes med 1.
         self._generasjon+=1
 
 

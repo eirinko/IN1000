@@ -39,3 +39,9 @@ Print() bruker veldig mye kapasitet og derfor er det ikke lurt aa bruke den saa 
 Derfor er den andre loesningen bedre.
 
 Forklaring til oppdatering():
+Er gitt i programmet. Av alle deloppgavene syns jeg denne var den vanskeligste.
+Jeg skjoente fort hvordan jeg skulle sjekke spillets regler,
+men var ikke sikker paa hvordan jeg skulle finne status til naboene.
+Jeg tror usikkerheten gikk ut paa at jeg hadde en liste "naboer" med celler,
+men visste ikke hvilke metoder/funksjoner som kunne brukes paa hva.
+Med proeving og feiling og hjelp fant jeg til slutt ut hva som maatte til.

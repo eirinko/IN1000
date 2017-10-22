@@ -1,4 +1,5 @@
 from celle import Celle
+#Brukt til aa teste klassen Celle()
 
 def main():
     liv1=Celle()

@@ -4,6 +4,7 @@ def main():
     rader=int(input("Hvor mange rader vil du at spillebrettet skal ha? \n"))
     kolonner=int(input("Hvor mange kolonner vil du at spillebrettet skal ha? \n"))
 
+#Sjekker at bruker har valgt verdier storre enn 0.
     if (rader>0) and (kolonner>0):
         brett1=Spillebrett(rader,kolonner)
         while True:

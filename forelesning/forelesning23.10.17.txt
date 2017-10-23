@@ -1,0 +1,12 @@
+Lenkede lister:
+En referanse til det første objektet fra der vi skal bruke listen. en referansevariabel refererer til neste referansevariabel. Den siste i listen har _neste=None. Det er tegn på at det er siste i listen.
+
+Grensesnitt for klassen Node:
+Legge til etterfølger
+Få tak i etterfølgeren/hent etterfølger
+Fjerne etterfølgeren
+
+Datastruktur i Node:
+referansevariabel så vi får tak i neste objekt.
+innholdet objekene skal representere
+

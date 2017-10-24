@@ -1,0 +1,9 @@
+Variabel "pris" opprettes, som er referanse til instans av klassen int, verdi 50.
+Tar input fra bruker, som skal være alder, lagrer dette i variabel "tekst".
+Verdien i "tekst" gjøres om til en instans av klassen int og lagres i variabelen "alder".
+
+If-setning:
+Hvis verdien lagret i "alder" er mindre enn 12 eller større enn 67 vil følgende skrives ut:
+"Du må betale 25 kr", der 25 er halvparten av verdien lagret i "pris" (50).
+Ellers (hvis verdien "alder" er mellom og inkludert 12 og 67) vil prisen være 50.
+Følgende skrives ut: "Du må betale 50 kr"

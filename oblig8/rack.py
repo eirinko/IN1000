@@ -20,17 +20,17 @@ class Rack:
 	## Beregner sammenlagt antall prosessorer i nodene i et rack
 	# @return antall prosessorer
 	def antProsessorer(self):
-		self._prosessor_telling=0
-		for element in self._listeNoder:
+                self._prosessor_telling=0
+                for element in self._listeNoder:
                         self._prosessor_telling+=element.antProsessorer()
-                return self._prosessor_telling                
+                return self._prosessor_telling
 
 	## Beregner antall noder i racket med minne over gitt grense
 	# @param paakrevdMinne antall GB minne som kreves
 	# @return antall noder med tilstrekkelig minne
 	def noderMedNokMinne(self, paakrevdMinne):
-		self._nokMinne=0
-		for element in self._listeNoder:
-                        if element.nokMinne==True:
+                self._nokMinne=0
+                for element in self._listeNoder:
+                        if element.nokMinne(paakrevdMinne)==True:
                                 self._nokMinne+=1
                 return self._nokMinne

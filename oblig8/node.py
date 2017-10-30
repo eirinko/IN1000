@@ -17,7 +17,10 @@ class Node:
 	#  @param paakrevdMinne GB minne som kreves for programmet
 	#  @return True hvis noden har minst saa mye minne
 	def nokMinne(self, paakrevdMinne):
-                if paakrevdMinne<=self._minne:
+                if 0<=paakrevdMinne<=self._minne:
                         return True
+                elif paakrevdMinne<0: #Tilfelle paakrevdMinne blir satt til negativt tall.
+                        print("Value Error: The required memory for the node is set to a negative number. \n")
+                        return False
                 else:
                         return False

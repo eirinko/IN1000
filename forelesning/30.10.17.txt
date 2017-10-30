@@ -1,0 +1,64 @@
+Beskrive problemstilling, planlegg program, skrive kode, en klasse av gangen, teste og kjore programmet.
+Underveis: rette opp feil.
+
+Mange sykdommer er delvis arvelige, skyldes gener i ulike varianter, hvor noen gir oekt risiko for bestemte sykdommer.
+Skal skrive et program som sjekker tusenvis av gen-varianter for en pasient mot hundrevis av potensielle sykdommer.
+
+Vanlig: 	ACCGAT
+Ditt DNA: 	AGCTAT
+Indeks:		012345
+Endring i indeks 1 og 3.
+
+Vi skal sjekke tusenvis av DNA-endringer for en pasient mot hundrevis av potensielle sykdommer.
+
+Lager klasse Sykdom.
+Håndtere hundrevis av ulike sykdommer.
+
+Lager en klasse: SykdomsKatalog
+som inneholder mange Sykdom-objekter.
+
+Lager en klasse: Pasient
+
+Beskrive hele progr på overordnet nivå (planlegge alle klasser)
+	- Bryr oss bare om grensesnitt - klasser og metodenavn
+	- Fordel å se helheten.
+
+Gjør oss ferdig med en klasse av gangen.
+	- Bryr oss bare om en bit av gangen.
+	- Fordel å slippe å ta alt innover seg med en gang.
+	
+Tester:
+Enhetstest - sjekker hver klasse.
+Integrasjonstest - sjekk at flere klaser virker sammen
+Applikasjonstest - at programmet virker som forespeilet.
+
+Det finnes noe som heter testdrevet utvikling der testene lages først og deretter skriver programmet som skal testes.
+
+Må kunne registrere en posisjon av betydning.
+deg leggTilPosisjon(sel,posisjon):
+
+def erAssosiert(self,posisjon):
+
+def __init__(self,navn):
+
+
+Grensesnitt for Sykdomskatalog:
+def __init__(self,filnavn):
+
+Sjekke at gitt posisjon er assosiert med en eller annen sykdom i samlingen.
+def sjekkMutasjon(self,posisjon):
+
+Fremgangsmaate for innlesing:
+Les linje med posisjon og tilhørende sykdom.
+Finn objekt for sykdommen eller lag nytt.
+Legg lokasjonen inn i objektet.
+
+Lage SykdomsKatalog som blir lest inn fra fil.
+katalog=Sykdo("syk.txt")
+Lage pasient-objekt med data fra fil
+pasient = Pasient("mutasjoner.txt")
+
+
+
+
+

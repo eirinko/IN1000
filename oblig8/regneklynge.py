@@ -21,7 +21,12 @@ class Regneklynge:
 	# @param node referanse til noden som skal settes inn i datastrukturen
 	def settInnNode(self, node):
                 #Maa se gjennom lista av alle racks.
-		if self._noderPerRack>
+		if self._noderPerRack>self._listeRacks[-1].getAntNoder():
+                        self._listeRacks[-1].append(node)
+                else:
+                        self._listeRacks.append(Rack())
+                        self._listeRacks[-1].append(node)
+                
 
 	## Beregner totalt antall prosessorer i hele regneklyngen
 	# @return totalt antall prosessorer
@@ -35,9 +40,12 @@ class Regneklynge:
 	# @param paakrevdMinne hvor mye minne skal noder som telles med ha
 	# @return antall noder med tilstrekkelig minne
 	def noderMedNokMinne(self, paakrevdMinne):
-		pass
+		self._NodeMinneIRacks=0
+		for element in self._listeRacks:
+                        self._NodeMinneIRacks+=element.noderMedNokMinne(paakrevdMinne)
+                return self._NodeMinneIRacks
 
 	## Henter antall racks i regneklyngen
 	# @return antall racks
 	def antRacks(self):
-		pass
+		return len(self._listeRacks)

@@ -6,26 +6,24 @@ from rack import Rack
 class Regneklynge:
 	## Oppretter tom regneklynge for racks med oppgitt maxtall noder/ rack
 	# @param noderPerRack max antall noder som kan plasseres i et rack
-	#def __init__(self, noderPerRack):
-	#	self._noderPerRack=int(noderPerRack) #maks antall noder i et rack
-	#	self._listeRacks=[]
+	def __init__(self, noderPerRack):
+		self._noderPerRack=int(noderPerRack) #maks antall noder i et rack
+		self._listeRacks=[]
 
 	## Alternativ konstruktor for de som loser oppgave d). Kan ellers ignoreres
 	## Leser data om regneklynge fra fil, bygger datastrukturen.
 	# @param filnavn filene der dataene for regneklyngen ligger
-	def __init__(self, filnavn):
-                self._noderPerRack
-                self._lesFil(filnavn)
-
-		min_fil=open("regneklynge_test.txt")
-		for linje in min_fil:
-
-        def _lesFil(self, filnavn):
-                fil = open(filnavn)
-                for linje in fil:
-                    biter=linje.split(" ")
-                    antNoder=int(linje[0])
-                    minnePerNode=int(
+	#def __init__(self, filnavn):
+        #        self._noderPerRack=0
+        #        self._lesFil(filnavn)
+#
+        #def _lesFil(self, filnavn):
+        #        fil = open(filnavn)
+        #        for linje in fil:
+        #            biter=linje.split(" ")
+        #            antNoder=int(linje[0])
+        #            minnePerNode=int(linje[1])
+                    
 
 	## Plasserer en node inn i et rack med ledig plass, eller i et nytt
 	# @param node referanse til noden som skal settes inn i datastrukturen

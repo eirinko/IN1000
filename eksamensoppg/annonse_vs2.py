@@ -19,9 +19,9 @@ def Annonse:
                 hoyeste=self._listeBud[i]
         return hoyeste
     
-    def kraftBud(self,hvem,belop,max):
+    def kraftBud(self,hvem,belop,maxV):
         if belop>self.hoyesteBud():
             self.giBud(hvem,belop)
         elif belop<=self.hoyesteBud():
-            if self.hoyesteBud()<max:
+            if self.hoyesteBud()<maxV:
                 self.giBud(hvem,self.hoyesteBud()+1)

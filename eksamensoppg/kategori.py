@@ -1,3 +1,5 @@
+from annonse import Annonse
+
 class Kategori:
     def __init__(self,katNavn):
         self._katNavn=katNavn
